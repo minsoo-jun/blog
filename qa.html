@@ -5,12 +5,7 @@ description: "Kodeveloper"
 multilingual: true
 ---
 
-<!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 한국어 </option>
-</select>
-
-{% for post in paginator.posts %}
+{% for post in paginator.qas %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
